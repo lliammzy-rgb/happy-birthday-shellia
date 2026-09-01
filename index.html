@@ -811,6 +811,7 @@
 
       .carousel {
         width: min(100%, 390px);
+        margin: 0 auto;
       }
 
       .carousel-window {
@@ -822,6 +823,7 @@
       .carousel-track {
         display: flex;
         align-items: stretch;
+        justify-content: flex-start;
         transform: translate3d(0, 0, 0);
         transition: transform 360ms steps(8, end);
         will-change: transform;
@@ -829,13 +831,15 @@
 
       .photo-slide {
         flex: 0 0 100%;
-        display: grid;
-        place-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding: 12px 14px 20px;
       }
 
       .polaroid {
         width: min(100%, 320px);
+        margin: 0 auto;
         padding: 12px 12px 18px;
         background: var(--cream);
         border: 5px solid var(--ink);
@@ -986,6 +990,24 @@
         .section-inner {
           padding-left: 0.75rem;
           padding-right: 0.75rem;
+        }
+
+        .carousel {
+          width: min(100%, 320px);
+        }
+
+        .photo-slide {
+          padding: 10px 0 14px;
+        }
+
+        .polaroid {
+          width: min(100%, 280px);
+          padding: 10px 10px 14px;
+        }
+
+        .photo-caption {
+          min-height: 48px;
+          font-size: clamp(18px, 5vw, 24px);
         }
 
         .flip-card,
