@@ -2435,15 +2435,12 @@ Semoga tahun baru hidupmu membawa tenang yang panjang, mimpi yang makin dekat, d
       playsinline
       crossorigin="anonymous"
     >
-      <source
-        src="asset/magnolia celebration - Magnolia.mp3"
-        type="audio/mpeg"
-      />
+      <source src="asset/magnolia.mp3" type="audio/mpeg" />
     </audio>
 
     <script>
-      // EDIT DI SINI: path audio utama.
-      const AUDIO_PATH = "asset/magnolia celebration - Magnolia.mp3";
+      // PATH AUDIO AMAN UNTUK DEPLOYMENT: tanpa spasi, siap dipakai di Vercel.
+      const AUDIO_PATH = "asset/magnolia.mp3";
       const AUDIO_FALLBACK_URL =
         "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
 
